@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  /*1 coluna /2 coluna (1fr= tamanho flexível)*/
+  gap: 2rem;
+  /*Distanciamento entre as colunas*/
+  align-items: flex-start;
+  /* sempre alinhados para o topo */
+}
+
+/*tela em celular/tela de no maximo 768px*/
+@media (max-width:768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
